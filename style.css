@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+:root {
+    font-size: 10px;
+}
+body {
+    height: 100vh;
+    color: white;
+}
+body, input, button, textarea {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    text-align: center;    
+    min-height: 100vh;
+
+    display: flex;
+}
+#container {
+    margin: auto;
+    width: 90%;
+}
+location, h1, .visit p {
+    height: 16vh;
+}
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    transition: background .200ms;
+}
+.visit a:hover {
+    background: #96feff;
+}
+
+/*Animações*/
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translatey(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+.visit a {
+    animation-delay: 250ms;
+}
